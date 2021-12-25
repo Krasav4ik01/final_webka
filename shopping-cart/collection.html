@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+   
+<header class="header">
+
+    
+
+    <nav class="navbar">
+        <a href="http://localhost/acc/intex.html">ГЛАВНАЯ</a>
+   
+        <a href="http://localhost/acc/shopping-cart/">МЕНЮ</a>
+        <a href="http://localhost/acc/history%20of%20shop/" class="logo"><span>Mi</span>amor</a>
+        <a href="http://localhost/acc/доставка/">ДОСТАВКА</a>
+        <a href="file:///C:/Users/Ноут/Desktop/account/shopping-cart/faq.html">FAQ</a>
+        
+    </nav>
+    <div class="bt">
+        <button id="btn_white" onclick="popup()" class="btn btn-outline-light btn-lg">Log In </button>
+        </div>
+        <div class="pic">
+            <div class="user_profile">
+                <img id="profile_img" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="">
+                <p id="user_name"></p>
+                </div>
+                </div>
+             
+         
+        <div class="popup">
+            <div class="popup-content">
+                <!-- <form action="config.php" method="POST"> -->
+                    <img onclick="close_popup()" src="https://cdn.pixabay.com/photo/2013/07/12/15/37/close-150192_1280.png" alt="" class="closed" width="7%">
+                    <img src="./logo-mi.png" alt="logo" width="10%">
+                    <input id="username" type="text" placeholder="Username" name="username" required autofocus>
+                    <input id="pass" type="password" placeholder="Password" name="password" required>
+                    <input id="pass_again" type="password" placeholder="Password again" name="password" required>
+                    <button id="log_btn" onclick="log_php(username.value, pass.value)" class="btn btn-outline-dark">Login</button>
+                    <button id="reg_btn" onclick="reg_php(username.value, pass.value, pass_again.value)" class="btn btn-outline-dark">Register</button>
+                    <label for="switch" id="register" onclick="reg_btn()">Don't have an account?</label>
+                    <!-- <input type="submit" name="" id="" class="btn btn-outline-dark" value="Login"> -->
+                <!-- </form> -->
+            </div>
+        </div>
+
+
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+    
+</header>
+
+         <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/collection.png" width="150%" id="ProductImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="img/collection1.jpg" width="150%" id="SmallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/collection2.png" width="150%" id="SmallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/collection.png" width="150%" id="SmallImg">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/collection4.png" width="150%" id="SmallImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Mi Amor / Нежнейшие макаронс</p>
+                    <h1>КОЛЛЕКЦИЯ "JARDIN"</h1>
+                    <h4></h4>
+                    <select>
+                        <option>Количество</option>
+                        <option>5 штук</option>
+                        <option>10 штук</option>
+                        <option>15 штук</option>
+                        <option>20 штук</option>
+                        <option>25 штук</option>
+                      </select>
+
+                      <br><br>
+
+                        
+                        
+                        <h3 > Описание<i class="fa fa-indent"></i> </h3>
+                        <br>
+                        <p>Малина, Лаванда-абрикос, Боб-Тонка-Вишня, Мята-Смородина, Базилик-клубника </p>
+                        <a href="index.html" class="btn"> На главную страницу</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+    
+    
+
+
+
+
+        <script src="./script.js"></script>
+    <script> 
+        var ProductImg = document.getElementById("ProductImg");
+        var SamllImg = document.getElementById("SmallImg");
+        SmallImg[0].onclick = function(){
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function(){
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function(){
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function(){
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var user = "";
+       function reg_btn(){
+     var s = document.getElementById("register");
+     if(s.innerHTML == "Don't have an account?"){
+       document.getElementById("reg_btn").style.display = "inline";
+       document.getElementById("log_btn").style.display = "none";
+       document.getElementById("pass_again").style.display = "block";
+       document.querySelector(".popup-content").style.height = "380px";
+       s.innerHTML = "You have an account?";
+     }
+     else{
+       document.getElementById("reg_btn").style.display = "none";
+       document.getElementById("log_btn").style.display = "inline";
+       document.getElementById("pass_again").style.display = "none";
+       document.querySelector(".popup-content").style.height = "320px";
+       s.innerHTML = "Don't have an account?";
+     }
+   }
+   
+   
+   
+   function log_php(uname, pass){
+     $.ajax({
+       url : 'login.php',
+       type : 'POST',
+       data: {username: uname, password: pass},
+       success : function (result) {
+         console.log (result); // Here, you need to use response by PHP file.
+         if(result == "Logged IN!") {
+           login(uname);
+           user = uname;
+         }
+         else alert("Wrong input");
+       },
+       error : function () {
+         console.log ('error');
+       }
+     });
+   }
+   
+   function reg_php(uname, pass, pass_again){
+     if(pass == pass_again){
+     $.ajax({
+       url : 'register.php',
+       type : 'POST',
+       data: {username: uname, password: pass},
+       success : function (result) {
+         console.log (result); // Here, you need to use response by PHP file.
+         if(result == "Success!")login(uname), close_popup();
+         else alert("Wrong input");
+       },
+       error : function () {
+         console.log ('error');
+       }
+     });
+   }
+   else{
+       alert("different password inputs!");
+   }
+   }
+   
+   
+   
+   
+   
+   
+     
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+    
+
+        <nav class="navbar">
+            <a href="http://localhost/acc/intex.html">ГЛАВНАЯ</a>
+       
+            <a href="http://localhost/acc/shopping-cart/">МЕНЮ</a>
+            <a href="http://localhost/acc/history%20of%20shop/" class="logo"><span>Mi</span>amor</a>
+            <a href="#http://localhost/acc/доставка/">ДОСТАВКА</a>
+            <a href="file:///C:/Users/Ноут/Desktop/account/shopping-cart/faq.html">FAQ</a>
+            
+        </nav>
+        <div class="bt">
+            <button id="btn_white" onclick="popup()" class="btn btn-outline-light btn-lg">Log In </button>
+            </div>
+            <div class="pic">
+                <div class="user_profile">
+                    <img id="profile_img" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="">
+                    <p id="user_name"></p>
+                    </div>
+                    </div>
+                 
+             
+            <div class="popup">
+                <div class="popup-content">
+                    <!-- <form action="config.php" method="POST"> -->
+                        <img onclick="close_popup()" src="https://cdn.pixabay.com/photo/2013/07/12/15/37/close-150192_1280.png" alt="" class="closed" width="7%">
+                        <img src="./logo-mi.png" alt="logo" width="10%">
+                        <input id="username" type="text" placeholder="Username" name="username" required autofocus>
+                        <input id="pass" type="password" placeholder="Password" name="password" required>
+                        <input id="pass_again" type="password" placeholder="Password again" name="password" required>
+                        <button id="log_btn" onclick="log_php(username.value, pass.value)" class="btn btn-outline-dark">Login</button>
+                        <button id="reg_btn" onclick="reg_php(username.value, pass.value, pass_again.value)" class="btn btn-outline-dark">Register</button>
+                        <label for="switch" id="register" onclick="reg_btn()">Don't have an account?</label>
+                        <!-- <input type="submit" name="" id="" class="btn btn-outline-dark" value="Login"> -->
+                    <!-- </form> -->
+                </div>
+            </div>
+    
+    
+    
+        <div id="menu-bars" class="fas fa-bars"></div>
+        
+    </header>
+    <section id="featured">
+        
+        <div class="featured-row">
+            <div class="featured-left-col">
+                <img src="images/imgdel.jpg" alt="">
+            </div>
+            
+            
+
+            <div class="featured-right-col">
+                <h1>Доставка и самовывоз </h1>
+            
+                    
+                <br>
+                <hr>
+                <br>
+                
+                <br>
+                <p>Если Вы сейчас далеко, или дела не позволяют, но хочется сделать кому-то приятное —
+                        Вы можете заказать доставку нежнейших макаронс в нужный день, а мы позаботимся, чтобы
+                        подарок был безупречным.
+                        <br>
+                        По желанию к заказу можем добавить и подписать одну из предлоденных карточек.</p>
+                <br>
+                        <h2>Доставка курьером:</h2>
+                <br>
+                <p>Доставка осуществляется ежедневно с 09:30 до 20:00</p>
+                <br>
+                <h3>Стоимость доставки зависит от Вашего адреса:
+                    <br>
+                    1000-1500 тг
+                    <br>
+                    </h3>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section id="featured2"></section>
+    <div class="featured2-row">
+        <div class="featured2-left-col">
+           <h1>Самовывоз</h1>
+           <br>
+           <hr>
+           <br>
+                <h2>Пункт самовывоза:</h2>
+                <br>
+                <p>улица Шевченко 18, Алматы 050000</p>
+                <br>
+                <h2>Оплата</h2>
+                <br>
+                <p>При самовывозе вы можете оплатить заказ при получении наличными или заранее оплатить заказ банковской картой. Для этого укажите выбранный способ при оформлении заказа.
+                   <br>
+                   <br>
+                    Оплата банковской картой удобна, если вы хотите отправить десерты в подарок или не желаете возиться с наличными при получении заказа.</p>
+                    </div>
+           <div class="featured2-right-col"> 
+            <img src="images/img2.JPG" alt="">
+
+        </div>
+        </div>
+    </div>
+    <br>
+        <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5647.28958196988!2d76.95123538907431!3d43.243375843703014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe84e7317c90d9872!2sMi%20Amor!5e0!3m2!1sen!2skz!4v1639843791336!5m2!1sen!2skz" 
+                width="100%" height="300" style="border:0;"  allowfullscreen="" loading="lazy" ></iframe>
+            </div>
+            
+            
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Almaty </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> microregion </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> ulica </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> bla bla </a>
+            
+        </div>
+
+        
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://api.whatsapp.com/send?phone=77058000867" target="_blank"> <i class="fas fa-phone"></i> +7705-800-08-67 </a>
+            <a href="https://t.me/@rarraavis"> <i class="fab fa-telegram" target="_blank"></i> @rarraavis </a>
+            <a href="#"> <i class="fas fa-envelope"></i> miamor.almaty@gmail.com </a>
+            <a href="https://instagram.com/mi.amor.almaty?utm_medium=copy_link" target="_blank"> <i class="fab fa-instagram"></i> mi.amor.almaty </a>
+            
+        </div>
+
+       
+        <form>
+            
+            <div class="inputBox">
+             
+                <input id="title" type="text" placeholder="Title" name="title" required>
+            </div>
+            <textarea name="text" id="textarea" cols="100" rows="2" placeholder="Text"></textarea>
+            <input type="submit" name="upload" id="" value="send message" class="btn">
+        </form>
+
+    </div>
+
+    <div class="credit"> created by <span>sdudent</span> | all rights reserved </div>
+
+</section>
+</body>
+<script src="./script.js"></script>
+
+<script>
+    var user = "";
+   function reg_btn(){
+ var s = document.getElementById("register");
+ if(s.innerHTML == "Don't have an account?"){
+   document.getElementById("reg_btn").style.display = "inline";
+   document.getElementById("log_btn").style.display = "none";
+   document.getElementById("pass_again").style.display = "block";
+   document.querySelector(".popup-content").style.height = "380px";
+   s.innerHTML = "You have an account?";
+ }
+ else{
+   document.getElementById("reg_btn").style.display = "none";
+   document.getElementById("log_btn").style.display = "inline";
+   document.getElementById("pass_again").style.display = "none";
+   document.querySelector(".popup-content").style.height = "320px";
+   s.innerHTML = "Don't have an account?";
+ }
+}
+
+
+
+function log_php(uname, pass){
+ $.ajax({
+   url : 'login.php',
+   type : 'POST',
+   data: {username: uname, password: pass},
+   success : function (result) {
+     console.log (result); // Here, you need to use response by PHP file.
+     if(result == "Logged IN!") {
+       login(uname);
+       user = uname;
+     }
+     else alert("Wrong input");
+   },
+   error : function () {
+     console.log ('error');
+   }
+ });
+}
+
+function reg_php(uname, pass, pass_again){
+ if(pass == pass_again){
+ $.ajax({
+   url : 'register.php',
+   type : 'POST',
+   data: {username: uname, password: pass},
+   success : function (result) {
+     console.log (result); // Here, you need to use response by PHP file.
+     if(result == "Success!")login(uname), close_popup();
+     else alert("Wrong input");
+   },
+   error : function () {
+     console.log ('error');
+   }
+ });
+}
+else{
+   alert("different password inputs!");
+}
+}
+
+
+
+
+
+
+ 
+</script>
+
+</html>

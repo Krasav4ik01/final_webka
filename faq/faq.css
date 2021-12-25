@@ -1,0 +1,72 @@
+/*Accordion*/
+
+.section{
+    padding: 7em 0;
+}
+
+.btn.btn-primary{
+    color: black;
+    border-width: 2px;
+    background: rgb(131, 131, 131);
+    border-color: #f9cce7;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.accordiom-item{
+    font-size: 15px;
+    border: 1px solid #dee2ed;
+}
+
+.accordiom-item h2 button{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #f9cce7;
+    position:relative;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+    border-radius: 0;
+
+}
+
+.accordiom-item h2 button .fa{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.accordiom-item h2 button:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+}
+
+.accordiom-item h2 button.collapsed{
+    color: #000;
+}
+
+.accordiom-item h2 button.collapsed .fa{
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordiom-item h2 button.collapsed:hover{
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2)!important;
+}
+
+
+
+
+

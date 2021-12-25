@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Imperial+Script&family=Karla:ital,wght@0,300;0,600;1,200;1,400&family=Poppins:wght@200;300;400;500;600;700;800&family=Vujahday+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+
+    
+
+        <nav class="navbar">
+            <a href="http://localhost/acc/intex.html">ГЛАВНАЯ</a>
+       
+            <a href="#about">МЕНЮ</a>
+            <a href="http://localhost/acc/history%20of%20shop/" class="logo"><span>Mi</span>amor</a>
+            <a href="#gallery">ДОСТАВКА</a>
+            <a href="#price">FAQ</a>
+            
+        </nav>
+        <div class="bt">
+            <button id="btn_white" onclick="popup()" class="btn btn-outline-light btn-lg">Log In </button>
+            </div>
+            <div class="pic">
+                <div class="user_profile">
+                    <img id="profile_img" src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="">
+                    <p id="user_name"></p>
+                    </div>
+                    </div>
+                 
+             
+            <div class="popup">
+                <div class="popup-content">
+                    <!-- <form action="config.php" method="POST"> -->
+                        <img onclick="close_popup()" src="https://cdn.pixabay.com/photo/2013/07/12/15/37/close-150192_1280.png" alt="" class="closed" width="7%">
+                        <img src="./logo-mi.png" alt="logo" width="10%">
+                        <input id="username" type="text" placeholder="Username" name="username" required autofocus>
+                        <input id="pass" type="password" placeholder="Password" name="password" required>
+                        <input id="pass_again" type="password" placeholder="Password again" name="password" required>
+                        <button id="log_btn" onclick="log_php(username.value, pass.value)" class="btn btn-outline-dark">Login</button>
+                        <button id="reg_btn" onclick="reg_php(username.value, pass.value, pass_again.value)" class="btn btn-outline-dark">Register</button>
+                        <label for="switch" id="register" onclick="reg_btn()">Don't have an account?</label>
+                        <!-- <input type="submit" name="" id="" class="btn btn-outline-dark" value="Login"> -->
+                    <!-- </form> -->
+                </div>
+            </div>
+
+            <div id="menu-bars" class="fas fa-bars"></div>
+    
+        </header>
+
+<section class="section1">
+    <div class="bcg_pic">
+        <img src="img3.jpg" alt="">
+    </div>
+
+    <div class="about-section">
+        <div class="inner-container">
+            <h5>
+                MACARONS & DESSERTS
+            </h5>
+            <h1>
+                Mi Amor
+                
+            </h1>
+            <br>
+            <h6>
+                 - since 2021- 
+            </h6>
+          
+            <br>
+            <h1>
+                TASTE  OF  LOVE
+            </h1>
+             
+            <p class="text">
+                <br>
+                <br>
+                
+                Более 35 вкусов;
+                <br>
+                <br>
+                Пирожные макаронс и другие десерты из натуральных ингредиентов, приготовленные с любовью.
+            </p>
+        </div>
+        </div>
+    </section>
+        <section class="setion2">
+        <div class="wrapper">
+            <div class="testimonial">
+                <article>
+                    <h1>Наша история <h1>
+                        
+                        <img src="img4.jpg" alt="">
+                        <blockquote>
+                            "Нас зовут Ельдар и Алина! Мы два человека безумно любящих друг друга и своё сладкое
+    детище Mi amor, основатели первой в Казахстане семейной монокондитерской макаронс! С
+    удовольствием познакомим вас с настоящими пирожными макаронс и их разнообразным
+    миром вкусов, ароматов и потрясающих текстур!
+    Самые лучшие, натуральные ингредиенты, ручная работа и идеальная, выверенная годами
+    рецептура -вот главные секреты безупречных макаронс! А название кондитерской (-перевод.
+    Моя любовь) полностью отражает наш подход к делу. Очень надеемся, что и вы разделите с
+    нами прекрасное чувство любви к этим красивым и нежным пирожным!"
+                        </blockquote>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div id="video" class="video">
+        <br>
+        <div class="main">
+          <h1 class="list-title"></h1>
+          <div class="second">
+      <br>
+    
+        </div>
+      </div>
+
+                 
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Almaty </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> microregion </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> ulica </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> bla bla </a>
+            
+        </div>
+
+        
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://api.whatsapp.com/send?phone=77058000867" target="_blank"> <i class="fas fa-phone"></i> +7705-800-08-67 </a>
+            <a href="https://t.me/@rarraavis"> <i class="fab fa-telegram" target="_blank"></i> @rarraavis </a>
+            <a href="#"> <i class="fas fa-envelope"></i> miamor.almaty@gmail.com </a>
+            <a href="https://instagram.com/mi.amor.almaty?utm_medium=copy_link" target="_blank"> <i class="fab fa-instagram"></i> mi.amor.almaty </a>
+            
+        </div>
+
+       
+        <form>
+            
+            <div class="inputBox">
+             
+                <input id="title" type="text" placeholder="Title" name="title" required>
+            </div>
+            <textarea name="text" id="textarea" cols="100" rows="2" placeholder="Text"></textarea>
+            <input type="submit" name="upload" id="" value="send message" class="btn">
+        </form>
+
+    </div>
+
+    <div class="credit"> created by <span>sdudent</span> | all rights reserved </div>
+
+</section>
+      <script src="./script.js"></script>
+</body>
+
+
+
+<script>
+    var user = "";
+   function reg_btn(){
+ var s = document.getElementById("register");
+ if(s.innerHTML == "Don't have an account?"){
+   document.getElementById("reg_btn").style.display = "inline";
+   document.getElementById("log_btn").style.display = "none";
+   document.getElementById("pass_again").style.display = "block";
+   document.querySelector(".popup-content").style.height = "380px";
+   s.innerHTML = "You have an account?";
+ }
+ else{
+   document.getElementById("reg_btn").style.display = "none";
+   document.getElementById("log_btn").style.display = "inline";
+   document.getElementById("pass_again").style.display = "none";
+   document.querySelector(".popup-content").style.height = "320px";
+   s.innerHTML = "Don't have an account?";
+ }
+}
+
+
+
+function log_php(uname, pass){
+ $.ajax({
+   url : 'login.php',
+   type : 'POST',
+   data: {username: uname, password: pass},
+   success : function (result) {
+     console.log (result); // Here, you need to use response by PHP file.
+     if(result == "Logged IN!") {
+       login(uname);
+       user = uname;
+     }
+     else alert("Wrong input");
+   },
+   error : function () {
+     console.log ('error');
+   }
+ });
+}
+
+function reg_php(uname, pass, pass_again){
+ if(pass == pass_again){
+ $.ajax({
+   url : 'register.php',
+   type : 'POST',
+   data: {username: uname, password: pass},
+   success : function (result) {
+     console.log (result); // Here, you need to use response by PHP file.
+     if(result == "Success!")login(uname), close_popup();
+     else alert("Wrong input");
+   },
+   error : function () {
+     console.log ('error');
+   }
+ });
+}
+else{
+   alert("different password inputs!");
+}
+}
+
+
+
+
+
+
+ 
+</script>
+
+
+
+</html>
